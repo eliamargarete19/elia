@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(252, 252, 252, 0.7)),url(banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: #808dff; /* You can change this color to your preference */
+}
+
+/* Styling for the navigation links */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Text color */
+    font-size: 16px; /* Font size */
+    margin-right: 15px; /* Space between links */
+}
+
+/* Styling for the active link */
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Bold font for active link */
+}
+
+/* Styling for the dropdown menu */
+.navbar-nav .dropdown-menu {
+    background-color: #fb675f; /* Dropdown menu background color */
+}
+
+/* Styling for the dropdown items */
+.navbar-nav .dropdown-item {
+    color: #ffffff; /* Text color */
+}
+
+/* Styling for the search form */
+.form-inline input,
+.form-inline button {
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Set the border color for the search input */
+.form-inline input {
+    border-color: #ffffff; /* Border color */
+}
+
+/* Styling for the search button */
+.form-inline button {
+    color: #ffffff; /* Button text color */
+    background-color: transparent; /* Transparent background */
+    border-color: #ffffff; /* Border color */
+}
+
+/* Hover effect for navigation links and dropdown items */
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-item:hover {
+    color: #ffffff; /* Text color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+/*-------aboutus--------*/
+
+.aboutus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #f1867e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/*-------testimonials--------*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #898dff;
+    padding: 25px;
+    cursor: pointer;
+    display: flexS;
+}
+
+.testimonials-col img{
+   height: 40px;
+   margin-left: 5px;
+   margin-right: 30px;
+   border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+
+}
+
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonials-col .fa{
+    color: #f44336;
+}
+
+@media(max-width: 700px){
+    .testimonials-col img{
+        height: 40px;
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*-------footer--------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
